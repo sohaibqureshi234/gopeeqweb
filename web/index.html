@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="gopeeqweb">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <meta property="og:url" content="https://go.peeq.inc/share/05de7991-9208-4408-94d8-b0f32063ec53.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="peeq | The Next Big Mobile App">
+  <meta property="og:description" content="Discover amazing Businesses and assets">
+  <meta property="og:image"
+        content="https://storage.googleapis.com/project-piq.appspot.com/thumbnail/overlay_05de7991-9208-4408-94d8-b0f32063ec53.jpg.png?GoogleAccessId=firebase-adminsdk-wd88a%40project-piq.iam.gserviceaccount.com&Expires=16447017600&Signature=IIOP6STp3NA20a5hQiQGpvNYJ9piDDzNlC57psnFqAxUULBgBwFrOc3ssDd9OyAVW6css%2FnQ2Q7vuLW6cI%2BQf4dv%2B8avYLMqYB3aPFFwfKaeckBsmqbba1ojyv%2Bl9m2oTI6mJ4DUdD2rjN8CAAwoDMCyR%2F7xNolffWd2EA6OxKLrTXBO7WNNIOg%2F5rOQ6QmAfn6mQr6BrQZWIYgJ8Mtjw25xq03MU%2FTkITowZVkdW930FpEQyMXU%2BGsMtubkDp5yZvZnevH60tOPVBgUOop3zli5Kq45pI2GRxlzJph2rd%2FmbTTm6YGWvcjWeS4k%2FdEhTRAWLoGIk9Gu9cgDLaAcnw%3D%3D">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="600">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>gopeeqweb</title>
+
+  <link rel="manifest" href="manifest.json"/>
+
+  <!-- Firebase SDK -->
+  <!-- ES module for modern browsers -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js';
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js';
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js';
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js';
+
+    // Your Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAoEBMQpINV2ULo9GSCyAnn2CEALWgEz_k",
+      authDomain: "project-piq.firebaseapp.com",
+      databaseURL: "https://project-piq-default-rtdb.firebaseio.com",
+      projectId: "project-piq",
+      storageBucket: "project-piq.appspot.com",
+      messagingSenderId: "192603333654",
+      appId: "1:192603333654:web:739d3a6e933ac022060137",
+      measurementId: "G-Z17RDESKZC"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <!-- Fallback for older browsers -->
+  <script nomodule src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
+  <script nomodule src="https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js"></script>
+  <script nomodule src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"></script>
+  <script nomodule src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"></script>
+
+  <!-- Flutter SDK -->
+  <script src="build/web/flutter.js" defer></script>
+  <script src="build/web/flutter_service_worker.js"></script>
+<!--  <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>-->
+</head>
+<body>
+<!-- Initialize Flutter App -->
+<script>
+    window.addEventListener('load', function(ev) {
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: "1477476543",
+          src: '/flutter_service_worker.js'
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
